@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Answer Page</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/css/bootstrap.min.css')}}>
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/css/jasny-bootstrap.min.css')}}>
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/css/main.css')}}>
+
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/css/responsive.css')}}>
+
+  <!--Fonts-->
+  <link rel="stylesheet" media="screen" href={{ url_for('static', filename='assets/css/font-awesome.min.css')}}>
+
+  <!-- Extras -->
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/extras/animate.css')}}>
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/extras/lightbox.css')}}>
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/extras/owl/owl.carousel.css')}}>
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/extras/owl/owl.theme.css')}}>
+  <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='assets/extras/owl/owl.transitions.css')}}>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+              <![endif]-->
+</head>
+<body>
+
+  <!-- Header Section Start -->
+  <div id="header">
+    <div class="container">
+      <div class="col-md-12 top-header">
+          <!-- navigation End -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner text-center">
+            <h1 class="wow fadeInDown animated" data-wow-delay=".8s">{{msg}}</h1>
+            <h2 class="wow fadeInDown animated" data-wow-delay=".6s">The correct answer is {{answer}} </h2>
+            <h2 class="wow fadeInDown animated" data-wow-delay=".6s">The algorithm predicted {{prediction}}</h2>
+            <h2 class="wow fadeInDown animated" data-wow-delay=".6s">Your guess was {{guess}}</h2>
+            <a href={{"../../game/"+level}} class="btn btn-common lg wow fadeInRight animated" data-wow-delay="1.0s">Play Again</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Header Section End -->
+
+  <!-- Blog Section Start -->
+
+
+
+  <!-- Footer section Start -->
+  <!-- <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+          <div class="copyright wow fadeInUp animated" data-wow-delay=".8s">
+            <p>Copyright &copy; 2014 GrayGrids | All rights reserved.</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+          <div class="scroll-top text-center wow fadeInUp animated" data-wow-delay=".6s">
+            <a href="#header"><i class="fa fa-chevron-circle-up fa-2x"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+          <p class="text-center wow fadeInUp animated" data-wow-delay=".8s">Developed By <a href="http://graygrids.com">GrayGrids</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <!-- Footer section End -->
+
+  <!-- jQuery Load -->
+  <script src= {{ url_for('static', filename='assets/js/jquery-min.js')}}></script>
+  <!-- Bootstrap JS -->
+  <script src= {{ url_for('static', filename='assets/js/min.js')}}></script>
+  <!-- WOW JS plugin for animation -->
+  <script src= {{ url_for('static', filename='assets/js/wow.js')}} ></script>
+  <!-- All JS plugin Triggers -->
+  <script src= {{ url_for('static', filename='assets/js/main.js')}}></script>
+  <!-- Smooth scroll -->
+  <script src={{ url_for('static', filename='assets/js/smooth-scroll.js')}}></script>
+  <!--  -->
+  <script src={{ url_for('static', filename='assets/js/jasny-bootstrap.min.js')}}></script>
+  <!-- Counterup -->
+  <script src={{ url_for('static', filename='assets/js/jquery.counterup.min.js')}}></script>
+  <!-- waypoints -->
+  <script src={{ url_for('static', filename='assets/js/waypoints.min.js')}}></script>
+  <!-- circle progress -->
+  <script src={{ url_for('static', filename='assets/js/circle-progress.js')}}></script>
+  <!-- owl carousel -->
+  <script src={{ url_for('static', filename='assets/js/owl.carousel.js')}}></script>
+  <!-- lightbox -->
+  <script src={{ url_for('static', filename='assets/js/lightbox.min.js')}}></script>
+
+</body>
+</html>
