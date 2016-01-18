@@ -40,7 +40,7 @@ def extract_data(filename, sampling = 'easy'):
     dat_new = pd.DataFrame(dat_new, columns = ['Start X','Start Y','Start Z'])
     #sample using sampling rate determined by level difficulty
     sam_dict = {'easy':0.7,'medium':0.1,'hard':0.01}
-    sam_rate = sam_dict[level]
+    sam_rate = sam_dict[sampling]
     dat_new.reset_index(drop=True,inplace=True)
     ind = np.random.choice(dat_new.index, size=dat_new.shape[0]*sam_rate, replace=False)
     dat_new = dat_new.iloc[ind,:]
@@ -108,7 +108,7 @@ def plot_cloud(filename, file, sampling = 'easy'):
 
     #set sampling rate
     sam_dict = {'easy':0.7,'medium':0.1,'hard':0.01}
-    sam_rate = sam_dict[level]
+    sam_rate = sam_dict[sampling]
 
     #sample using sampling rate
     dat_new.reset_index(drop=True,inplace=True)
@@ -126,17 +126,18 @@ def plot_cloud(filename, file, sampling = 'easy'):
 
     #Plot
     fig = plt.figure()
-
     data_plot = pd.DataFrame(data_plot, columns = ['Start X','Start Y','Start Z'])
     ax = plt.axes(projection='3d')
     x = data_plot['Start X']
     y = data_plot['Start Y']
     z = data_plot['Start Z']
+
     #name the plot files
     name_front = 'temp/' + file[:-4] + '_front'
     name_side = 'temp/' + file[:-4] + '_side'
     name_top = 'temp/' + file[:-4] + '_top'
-    #front view
+
+    #Check if the plots exist, if not then plot
     if os.path.isfile(name_front + sampling + '.png'):
         pass
     else:
@@ -144,6 +145,7 @@ def plot_cloud(filename, file, sampling = 'easy'):
         ax.set_xlabel('X')
         ax.set_ylabel('Y')
         ax.set_zlabel('Z')
+        #front view
         ax.view_init(azim=0)
         plt.savefig('static/'+ name_front + sampling)
         #side view
@@ -164,7 +166,6 @@ def z_max_y(df):
     '''
     df = df.dropna(axis=0)
     unique_z = df['Start Z'].unique()
-
     std = [0] * len(unique_z)
     for i, z in enumerate(unique_z):
         std[i] = df[df['Start Z']==z]['Start Y'].std()

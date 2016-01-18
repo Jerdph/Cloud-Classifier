@@ -31,7 +31,8 @@ def game(level):
                 '0':'motorcycle','1':'car','2':'airplane','3':'convertible','4':'train',
                 '5':'helicopter'}
     session['answer'] = ans_dict[file[:2]]
-    features = scaler.transform(extract_data(filename), sampling = level)
+    print level
+    features = scaler.transform(extract_data(filename, sampling = level))
     predict = model.predict(features)[0]
     session['prediction'] = ans_dict[predict]
     front_view, side_view, top_view = plot_cloud(filename, file, sampling = level)
