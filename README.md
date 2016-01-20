@@ -2,7 +2,7 @@
 ##Overview
 ShapeGram is a classifier for 3D objects. The model extracts features from 3D printing files in .csv formats and classify the object into 6 classes, airplane, car, convertible car, helicopter, motorcycle, and train. I incorporated the model into a web-based game that allows player tocompete with the algorithm to classfiy 3D objects.
 
-#Motivation
+##Motivation
 3D model classification has value in multiple industries and could be applied to areas such as architectural design, hardware QC, 
 and autonomous driving. Another area I believe there is great value in is medical diagnosis where you can generate 3D files from MRI and CT scans, so you can potentially automate medical diagnosis to a certain degree. 
 Since this project is my Galvanize Immersive Data Science Capstone, which has to be completed in 2 weeks, I decided to scope the project into building a 3D classifier for 6 classes with data that are readily available online.
