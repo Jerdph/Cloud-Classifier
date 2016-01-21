@@ -33,7 +33,6 @@ I decided to use a support vector machine model with an RBF kernel. The model ge
 To make things more fun, I created a web-based game that players can compete with my algorithm to classify 3D objects from point clouds. The web app has 3 pages which are described in detail below.
 
  1. Landing Page
-![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/home_page.png)
 
 This is a landing page where you can view the game instruction and select difficulties. There are 3 levels of difficulty, easy, medium, and hard. These level dictates the number of points in the point cloud that will be plotted. The harder the difficulty the lower the number of points that will be plotted.
 
