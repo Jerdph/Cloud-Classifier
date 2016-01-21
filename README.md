@@ -4,7 +4,7 @@ ShapeGram is a classifier for 3D objects. The model extracts features from 3D pr
 
 ##Motivation
 3D model classification has value in multiple industries and could be applied to areas such as architectural design, hardware QC, 
-and autonomous driving. Another area I believe there is great value in is medical diagnosis where, in addition to 3D imaging, you can generate 3D files from MRI and CT scans, so you can potentially automate medical diagnosis with machine learning to a certain degree. 
+and autonomous driving. Another area I believe there is great value in is medical diagnosis where, in addition to 3D imaging, you can generate 3D files from MRI and CT scans, so you can potentially automate medical diagnosis with machine learning. 
 However since this project is my Galvanize Data Science Capstone, which has to be completed in 2 weeks, I decided to scope the project into building a 3D classifier for 6 classes with data that is readily available online.
 
 ##Data 
@@ -21,12 +21,11 @@ The files are originally in .skp format, which I converted into .csv so that i c
 
 ##Data Extraction
 
-Since each 3D object are centered and scaled differently, I normalized the matrices and align them using 3D rotation matrices.
-After the files are the same format, they were featurized using an algorithm built into the model into a feature matrix. Featurizing the model solved the issue that each files have different number of vertices by reducing their dimensions and making them the same.
+Since each 3D object files are centered, scaled, and oriented differently, they were normalized and realigned using 3D transformation matrices. Afterwards, they were featurized using multiple algorithms into a feature matrix. Featurizing the model solved the issue that each file has different number of vertices by reducing their dimensions and matched the number of dimensions of all files.
 
 ##Modeling
 
-I decided to use a support vector machine model with an RBF kernel. The model generated an accuracy of 81% with 5 folds cross validation.
+I decided to model using a support vector machine model (SVM) with an RBF kernel. The model generated an accuracy of 81% with 5 folds cross validation.
 
 ##Web App
 
@@ -40,12 +39,12 @@ To make things more fun, I created a web-based game that players can compete wit
 2. Game Page
  ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/game_page.png)
 
- The game will show you 3 different angular view of the point clouds of the same object. You can make your guess by clicking a button at  the bottom of the screen
+ The game will show you 3 different angular views of an object. You can make your guess by clicking a button at the bottom of the screen
 
 3. Answer Page
  ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/result_page.png)
 
- The result page tells you what object it was, whether you got it right, and whether you beat the algorithm. Happy playing!
+ The result page tells you what object was, whether you got it right, and whether you beat the algorithm. Happy playing!
 
 ##Instruction
 If you did not download the data file provided here and wants to use your own set of data, you are welcome to do so, but please make sure the data folder is formatted the same way as the current structure because it is needed for the code to run properly.
