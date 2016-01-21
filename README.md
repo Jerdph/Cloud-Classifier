@@ -26,7 +26,7 @@ After the files are the same format, they were featurized using an algorithm bui
 
 ##Modeling
 
-I decided to use a support vector machine model with an RBF kernel. The model generated an accuracy of 81% with 5 folds cross validation and a 70% accuracy on unseen data set.
+I decided to use a support vector machine model with an RBF kernel. The model generated an accuracy of 81% with 5 folds cross validation.
 
 ##Web App
 
