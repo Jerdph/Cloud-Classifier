@@ -29,7 +29,7 @@ I decided to model using a support vector machine model (SVM) with an RBF kernel
 
 ##Web App
 
-To make things more fun, I created a web-based game that players can compete with my algorithm to classify 3D objects from point clouds. The web app has 3 pages which are described in detail below.
+To make things more fun, I created a web-based game that players can compete with my algorithm to classify 3D objects from point clouds. The web app has 3 pages which are described in detail below. Go to shapegram.xyz to access the game.
 
 1. Landing Page
  ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/home_page.png)
