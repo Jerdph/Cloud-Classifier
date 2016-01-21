@@ -35,7 +35,7 @@ To make things more fun, I created a web-based game that players can compete wit
 1. Landing Page
  ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/home_page.png)
 
- This is a landing page where you can view the game instruction and select difficulties. There are 3 levels of difficulty, easy, medium,  and hard. These level dictates the number of points in the point cloud that will be plotted. The harder the difficulty the lower the     number of points that will be plotted.
+ The first page is where you can view the game instruction and select difficulties. There are 3 levels of difficulty, easy, medium,  and  hard. These level dictates the number of points in the point cloud that will be plotted. The harder the difficulty the lower the number  of points that will be plotted.
 
 2. Game Page
  ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/game_page.png)
@@ -47,7 +47,6 @@ To make things more fun, I created a web-based game that players can compete wit
 
  The result page tells you what object it was, whether you got it right, and whether you beat the algorithm. Happy playing!
 
-
 ##Instruction
 If you did not download the data file provided here and wants to use your own set of data, you are welcome to do so, but please make sure the data folder is formatted the same way as the current structure because it is needed for the code to run properly.
 
@@ -58,5 +57,3 @@ If you did not download the data file provided here and wants to use your own se
 3. Run flask_app.py, this will create the webapp at port 5000. Now you can visit the app and play the game!
 
 Thanks for reading! Please feel free to give me any feedback at jerdph@gmail.com
-
-Jerd
