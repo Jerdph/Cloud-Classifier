@@ -1,4 +1,4 @@
-# ShapeGram
+# ShapeGram - 3D Classifier
 ##Overview
 ShapeGram is a classifier for 3D objects. The model extracts features from 3D printing files in .csv formats and classify the object into 6 classes, airplane, car, convertible car, helicopter, motorcycle, and train. I incorporated the model into a web-based game that allows player to compete with the algorithm to classify 3D objects.
 
