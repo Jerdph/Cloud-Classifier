@@ -34,14 +34,17 @@ To make things more fun, I created a web-based game that players can compete wit
 
 1. Landing Page
 ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/home_page.png)
+
 This is a landing page where you can view the game instruction and select difficulties. There are 3 levels of difficulty, easy, medium, and hard. These level dictates the number of points in the point cloud that will be plotted. The harder the difficulty the lower the number of points that will be plotted.
 
 2. Game Page
 ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/game_page.png)
+
 The game will show you 3 different angular view of the point clouds of the same object. You can make your guess by clicking a button at the bottom of the screen
 
 3. Answer Page
 ![alt tag](https://raw.github.com/jerdph/ShapeGram/master/img/result_page.png)
+
 The result page tells you what object it was, whether you got it right, and whether you beat the algorithm. Happy playing!
 
 
